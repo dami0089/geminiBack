@@ -8,8 +8,6 @@ app.use(express.json());
 
 dotenv.config();
 
-app.use(cors());
-
 // Middleware para contar los requests
 let requestCount = 0;
 app.use((req, res, next) => {
